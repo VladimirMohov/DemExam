@@ -1,0 +1,29 @@
+﻿<Page x:Class="DemExam.Views.Pages.AuthPage.SignInPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:models="clr-namespace:DemExam.Views.Models"
+        xmlns:local="clr-namespace:DemExam.Views.Pages.AuthPage"
+        mc:Ignorable="d" 
+        d:DesignHeight="802" d:DesignWidth="1450"
+        Title="SignInPage">
+
+    <Border HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF2B2825" Width="600" Height="600" CornerRadius="20">
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="620">
+            <StackPanel Background="#FF2B2825" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ui:TextBlock Margin="200, 0" FontTypography="BodyStrong" TextAlignment="Center" TextWrapping="WrapWithOverflow" FontSize="32" ui:Foreground="GhostWhite">Авторизация</ui:TextBlock>
+
+                <ui:TextBlock Margin="0, 50, 0, 0" Width="300" FontTypography="BodyStrong" TextWrapping="WrapWithOverflow" FontFamily="Bold" FontSize="18" ui:Foreground="GhostWhite">Логин</ui:TextBlock>
+                <ui:TextBox x:Name="LoginBox" Margin="0, 0, 0, 25" Width="300"></ui:TextBox>
+                <ui:TextBlock Width="300" FontTypography="BodyStrong" TextWrapping="WrapWithOverflow" FontFamily="Bold" FontSize="18" ui:Foreground="GhostWhite">Пароль</ui:TextBlock>
+                <ui:PasswordBox x:Name="PasswordBox" Margin="0, 0, 0, 25" Width="300"></ui:PasswordBox>
+
+                <ui:Button Click="SignIn_Click" HorizontalAlignment="Center" Content="Авторизовация" Icon="CheckmarkCircle12"/>
+
+                <ui:Button Click="SignUp_Click" Margin="0, 50" HorizontalAlignment="Center" Content="Создать аккаунт" Icon="CheckmarkCircle12" ui:Background="#4bb34b"></ui:Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>
